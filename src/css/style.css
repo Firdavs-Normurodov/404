@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+#app {
+  width: 100%;
+  max-width: 95%;
+  background: #000;
+}
