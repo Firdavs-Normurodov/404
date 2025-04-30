@@ -7,7 +7,37 @@
     <title>Shopery</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- top navbar -->
+      <div class="top-navbar">
+        <div class="top-navbar__container">
+        <div class="top-navbar__location">
+          <img src="./assets/svg/map-pin.svg" alt="">
+          <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+        </div>
+        <div class="top-navbar__controls">
+          <div class="top-navbar__selectors">
+            <select id="lang">
+              <option value="eng">Eng</option>
+              <option value="rus">Rus</option>
+            </select>
+            <select id="money">
+              <option value="usd">USD</option>
+              <option value="rub">RUB</option>
+            </select>
+          </div>
+
+          <div class="top-navbar__auth">
+            <button>Sign In</button>
+            <span>/</span>
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <!-- the end top-navbar -->
+    </div>
+
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

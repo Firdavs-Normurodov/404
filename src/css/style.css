@@ -1,9 +1,12 @@
 body {
-  display: flex;
-  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 #app {
   width: 100%;
-  max-width: 95%;
-  background: #000;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
