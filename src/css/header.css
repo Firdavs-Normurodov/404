@@ -1,23 +1,218 @@
-.top-navbar{
-	width: 100%;
-	max-width: 100%;
-  	border-bottom: 1px solid #e5e5e5;
-  	display: flex;
-  	justify-content: center;
+.top-navbar {
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
 }
-.top-navbar__container{
-	width: 100%;
-	max-width: 85%;
+
+.top-navbar__container {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-navbar__location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.top-navbar__location p{
+	font-size: 0.8rem;
+	color: var(--medium-grey);
+}
+
+.top-navbar__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.top-navbar__controls .vertical-line{
+	color: var(--lightest-grey);
+	padding: 0 0.8rem;
+}
+.top-navbar__controls select{
+	border: none;
+	outline: none;
+	background: transparent;
+}
+.top-navbar__controls select {
+  font-size: 0.8rem;
+  color: var(--medium-grey);
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.top-navbar__controls .top-navbar__auth{
+	gap: 0.5rem;
+}
+.top-navbar__controls .top-navbar__auth button{
+	border: none;
+	background: transparent;
+	color: var(--medium-grey);
+}
+/* main-navbar */
+
+
+.main-navbar {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-navbar__container {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-navbar__logo img{
+	width: 2rem;
+}
+.main-navbar__logo h2{
+	font-size: 2rem;
+	font-weight: 500;
+}
+.main-navbar__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:35%;
+}
+.main-navbar__search-card {
+  border: 1px solid var(--lightest-grey);
 	display: flex;
-  	justify-content: space-between;
-  	align-items: center;
+	width: 85%;
+	border-radius: 0.3rem 0 0 0.3rem;  
 }
-.top-navbar__location{
+.main-navbar__search .main-navbar__search-card label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-navbar__search .main-navbar__search-card label img{
+  padding-left: 0.5rem;
+	width: 1.2rem;
+}
+.main-navbar__search .main-navbar__search-card  input{
+	padding: 0.7rem 1rem;
+	width: 70%;
+	border: none;
+	outline: none;
+}
+.main-navbar__search .main-navbar__search-button{
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	outline: none;
+	padding: 0.7rem 1rem;
+	 border-radius: 0 0.3rem  0.3rem 0;  
+	background: var(--primary-green);
+	color:var(--light);
+}
+.main-navbar__cart {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-navbar__cart-like {
+  cursor: pointer;
+}
+
+.main-navbar__cart-like img,
+.main-navbar__cart-count img {
+  width: 1.6rem;
+  display: block;
+}
+
+.main-navbar__cart-count {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-navbar__cart-count span {
+  position: absolute;
+  top: -0.4rem;
+  right: -0.6rem;
+  background: var(--primary-green);
+  color: var(--white);
+  font-size: 0.7rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+.main-navbar__cart .main-navbar__cart-label{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* menu-navbar */
+
+
+
+.menu-navbar {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--dark-grey); 
+}
+
+.menu-navbar__container {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-navbar__container .menu-navbar__menu {
+/*  outline: 1px solid red;*/
+padding: 1.2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center;
+}
+
+.menu-navbar__container .menu-navbar__menu .menu-navbar__menu-selects {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 0;
+}
+.menu-navbar__menu .menu-navbar__menu-selects .menu-navbar__menu-select{
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--light) ;
+  font-size: 1rem;
+}
+.menu-navbar__phone{
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
 }
-.top-navbar__controls{
-	display: flex;
-	align-items: center;
+.menu-navbar__phone .menu-navbar__phone-number{
+  color: var(--light);
 }

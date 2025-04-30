@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/svg/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopery</title>
   </head>
@@ -11,33 +11,103 @@
       <!-- top navbar -->
       <div class="top-navbar">
         <div class="top-navbar__container">
-        <div class="top-navbar__location">
-          <img src="./assets/svg/map-pin.svg" alt="">
-          <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
-        </div>
-        <div class="top-navbar__controls">
-          <div class="top-navbar__selectors">
-            <select id="lang">
-              <option value="eng">Eng</option>
-              <option value="rus">Rus</option>
-            </select>
-            <select id="money">
-              <option value="usd">USD</option>
-              <option value="rub">RUB</option>
-            </select>
+          <div class="top-navbar__location">
+            <img src="./assets/svg/map-pin.svg" alt="" />
+            <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
           </div>
-
-          <div class="top-navbar__auth">
-            <button>Sign In</button>
-            <span>/</span>
-            <button>Sign Up</button>
+          <div class="top-navbar__controls">
+            <div class="top-navbar__selectors">
+              <select id="lang">
+                <option value="eng">Eng</option>
+                <option value="rus">Rus</option>
+              </select>
+              <select id="money">
+                <option value="usd">USD</option>
+                <option value="rub">RUB</option>
+              </select>
+            </div>
+              <span class="vertical-line">|</span>
+            <div class="top-navbar__auth">
+              <button>Sign In</button>
+              <span>/</span>
+              <button>Sign Up</button>
+            </div>
           </div>
         </div>
       </div>
-      <!-- the end top-navbar -->
+    </div>
+    <!-- the end top-navbar -->
+    <!-- main-navbar -->
+    <div class="main-navbar">
+      <div class="main-navbar__container">
+        <div class="main-navbar__logo">
+          <img src="./assets/svg/logo.svg" alt="" />
+          <h2>Ecobazar</h2>
+        </div>
+        <div class="main-navbar__search">
+          <div class="main-navbar__search-card">
+            <label for="search">
+            <img src="./assets/svg/search.svg" alt="" />
+          </label>
+          <input type="text" id="search" class="main-navbar__search-input" placeholder="Search" />
+          </div>
+          <button class="main-navbar__search-button">Search</button>
+        </div>
+        <div class="main-navbar__cart">
+          <div class="main-navbar__cart-like">
+            <img src="./assets/svg/heart.svg" alt="" />
+          </div>
+          <div class="main-navbar__cart-line">
+            <img src="./assets/svg/vertical-line.svg" alt="">
+          </div>
+          <div class="main-navbar__cart-count">
+            <img src="./assets/svg/bag.svg" alt="" />
+            <span>2</span>
+          </div>
+          <div class="main-navbar__cart-label">
+            <span>Shopping cart:</span>
+            <span>$57.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- the end main-navbar -->
+    <!-- Menu Navbar -->
+    <div class="menu-navbar">
+      <div class="menu-navbar__container">
+        <!-- Menu Items -->
+        <div class="menu-navbar__menu">
+          <div class="menu-navbar__menu-selects">
+            <select class="menu-navbar__menu-select">
+              <option>Home</option>
+            </select>
+            <select class="menu-navbar__menu-select">
+              <option>Shop</option>
+            </select>
+            <select class="menu-navbar__menu-select">
+              <option>Pages</option>
+            </select>
+            <select class="menu-navbar__menu-select">
+              <option>Blog</option>
+            </select>
+            <select class="menu-navbar__menu-select">
+              <option>About Us</option>
+            </select>
+            <select class="menu-navbar__menu-select">
+              <option>Contact Us</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Phone Number -->
+        <div class="menu-navbar__phone">
+          <img src="./public/assets/svg/phone-call.svg" alt="" />
+          <span class="menu-navbar__phone-number">(219) 555-0114</span>
+        </div>
+      </div>
     </div>
 
-    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
