@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --primary-green: #00B207;
-  --secondary-green: #20B526;
+  --primary-green: #00b207;
+  --secondary-green: #20b526;
   --dark-grey: #333333;
-  --white: #FFFFFF;
+  --white: #ffffff;
   --light-grey: #999999;
-  --accent-orange: #FF8A00;
+  --accent-orange: #ff8a00;
   --dark: #000000;
   --medium-grey: #666666;
-  --lightest-grey: #E6E6E6;
-  --light:#ffffff;
+  --lightest-grey: #e6e6e6;
+  --light: #ffffff;
 }
 #app {
   width: 100%;
@@ -23,4 +23,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-green);
 }

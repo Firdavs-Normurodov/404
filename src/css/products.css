@@ -29,13 +29,15 @@
   gap: 0.5rem;
   align-items: center;
 }
-
+.products__view-all span {
+  color: var(--primary-green);
+}
 .products__grid {
   width: 100%;
   max-width: 85%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); 
-  gap: 0; 
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
 }
 
 .product-card {

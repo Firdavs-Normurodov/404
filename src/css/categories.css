@@ -30,7 +30,9 @@
   gap: 0.5rem;
   font-size: 1rem;
 }
-
+.categories__view-all span {
+  color: var(--primary-green);
+}
 .categories__grid {
   width: 100%;
   max-width: 85%;
