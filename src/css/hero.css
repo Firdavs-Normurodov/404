@@ -256,7 +256,7 @@
   }
 
   .hero__button {
-    width: 30%;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
