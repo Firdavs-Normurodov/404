@@ -8,104 +8,770 @@
   </head>
   <body>
     <div id="app">
-      <!-- top navbar -->
-      <div class="top-navbar">
-        <div class="top-navbar__container">
-          <div class="top-navbar__location">
-            <img src="./assets/svg/map-pin.svg" alt="" />
-            <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
-          </div>
-          <div class="top-navbar__controls">
-            <div class="top-navbar__selectors">
-              <select id="lang">
-                <option value="eng">Eng</option>
-                <option value="rus">Rus</option>
-              </select>
-              <select id="money">
-                <option value="usd">USD</option>
-                <option value="rub">RUB</option>
-              </select>
-            </div>
-              <span class="vertical-line">|</span>
-            <div class="top-navbar__auth">
-              <button>Sign In</button>
-              <span>/</span>
-              <button>Sign Up</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- the end top-navbar -->
-    <!-- main-navbar -->
-    <div class="main-navbar">
-      <div class="main-navbar__container">
-        <div class="main-navbar__logo">
+      <div class="header-bar">
+        <div class="brand-navbar__logo">
           <img src="./assets/svg/logo.svg" alt="" />
-          <h2>Ecobazar</h2>
+          <h2 class=".brand-logo">Ecobazar</h2>
         </div>
-        <div class="main-navbar__search">
-          <div class="main-navbar__search-card">
-            <label for="search">
-            <img src="./assets/svg/search.svg" alt="" />
-          </label>
-          <input type="text" id="search" class="main-navbar__search-input" placeholder="Search" />
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <img src="./assets/svg/menu-icon.svg" alt="Menu" />
+        </button>
+      </div>
+
+      <div class="navbar-wrapper">
+        <!-- top navbar -->
+        <div class="top-navbar">
+          <div class="top-navbar__container">
+            <div class="top-navbar__location">
+              <img src="./assets/svg/map-pin.svg" alt="" />
+              <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+            </div>
+            <div class="top-navbar__controls">
+              <div class="top-navbar__selectors">
+                <select id="lang">
+                  <option value="eng">Eng</option>
+                  <option value="rus">Rus</option>
+                </select>
+                <select id="money">
+                  <option value="usd">USD</option>
+                  <option value="rub">RUB</option>
+                </select>
+              </div>
+              <span class="vertical-line">|</span>
+              <div class="top-navbar__auth">
+                <button class="bttu">Sign In</button>
+                <span>/</span>
+                <button>Sign Up</button>
+              </div>
+            </div>
           </div>
-          <button class="main-navbar__search-button">Search</button>
         </div>
-        <div class="main-navbar__cart">
-          <div class="main-navbar__cart-like">
-            <img src="./assets/svg/heart.svg" alt="" />
+        <!-- the end top-navbar -->
+        <!-- main-navbar -->
+        <div class="main-navbar">
+          <div class="main-navbar__container">
+            <div class="main-navbar__logo">
+              <img src="./assets/svg/logo.svg" alt="" />
+              <h2>Ecobazar</h2>
+            </div>
+            <div class="main-navbar__search">
+              <div class="main-navbar__search-card">
+                <label for="search">
+                  <img src="./assets/svg/search.svg" alt="" />
+                </label>
+                <input
+                  type="text"
+                  id="search"
+                  class="main-navbar__search-input"
+                  placeholder="Search"
+                />
+              </div>
+              <button class="main-navbar__search-button">Search</button>
+            </div>
+            <div class="main-navbar__cart">
+              <div class="main-navbar__cart-like">
+                <img src="./assets/svg/heart.svg" alt="" />
+              </div>
+              <div class="main-navbar__cart-line">
+                <img src="./assets/svg/vertical-line.svg" alt="" />
+              </div>
+              <div class="main-navbar__cart-count">
+                <img src="./assets/svg/bag.svg" alt="" />
+                <span>2</span>
+              </div>
+              <div class="main-navbar__cart-label">
+                <span>Shopping cart:</span>
+                <span>$57.00</span>
+              </div>
+            </div>
           </div>
-          <div class="main-navbar__cart-line">
-            <img src="./assets/svg/vertical-line.svg" alt="">
-          </div>
-          <div class="main-navbar__cart-count">
-            <img src="./assets/svg/bag.svg" alt="" />
-            <span>2</span>
-          </div>
-          <div class="main-navbar__cart-label">
-            <span>Shopping cart:</span>
-            <span>$57.00</span>
+        </div>
+        <!-- the end main-navbar -->
+        <!-- Menu Navbar -->
+        <div class="menu-navbar">
+          <div class="menu-navbar__container">
+            <!-- Menu Items -->
+            <div class="menu-navbar__menu">
+              <div class="menu-navbar__menu-selects">
+                <select class="menu-navbar__menu-select">
+                  <option>Home</option>
+                </select>
+                <select class="menu-navbar__menu-select">
+                  <option>Shop</option>
+                </select>
+                <select class="menu-navbar__menu-select">
+                  <option>Pages</option>
+                </select>
+                <select class="menu-navbar__menu-select">
+                  <option>Blog</option>
+                </select>
+                <select class="menu-navbar__menu-select">
+                  <option>About Us</option>
+                </select>
+                <select class="menu-navbar__menu-select">
+                  <option>Contact Us</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="menu-navbar__phone">
+              <img src="./public/assets/svg/phone-call.svg" alt="" />
+              <a href="tel:219-555-0114" class="menu-navbar__phone-number"
+                >(219) 555-0114</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- the end main-navbar -->
-    <!-- Menu Navbar -->
-    <div class="menu-navbar">
-      <div class="menu-navbar__container">
-        <!-- Menu Items -->
-        <div class="menu-navbar__menu">
-          <div class="menu-navbar__menu-selects">
-            <select class="menu-navbar__menu-select">
-              <option>Home</option>
-            </select>
-            <select class="menu-navbar__menu-select">
-              <option>Shop</option>
-            </select>
-            <select class="menu-navbar__menu-select">
-              <option>Pages</option>
-            </select>
-            <select class="menu-navbar__menu-select">
-              <option>Blog</option>
-            </select>
-            <select class="menu-navbar__menu-select">
-              <option>About Us</option>
-            </select>
-            <select class="menu-navbar__menu-select">
-              <option>Contact Us</option>
-            </select>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__main-banner">
+            <h2 class="hero__season-title">
+              Fresh & Healthy <br />
+              Organic Food
+            </h2>
+            <div class="hero__main-banner-sale">
+              <div class="hero__sale-icon">
+                <img src="./assets/svg/rectangle.svg" alt="Sale icon" />
+              </div>
+              <div class="hero__sale-text">
+                <span class="hero__sale-highlight">
+                  Sale up to <span class="hero__sale-percentage"> 30% OFF</span>
+                </span>
+                <span class="hero__sale-subtext"
+                  >Free shipping on all your order.</span
+                >
+              </div>
+            </div>
+
+            <a href="#" class="hero__button">
+              <span>Shop Now</span>
+              <img src="./assets/svg/next.svg" alt="Arrow icon" />
+            </a>
+          </div>
+          <div class="hero__side-cards">
+            <div class="hero__card--middle">
+              <div class="hero__card--middle-box">
+                <p class="hero__card-season">Summer Sale</p>
+                <h1 class="hero__card-discount">75% OFF</h1>
+                <p class="hero__card-category">Only Fruit & Vegetable</p>
+                <a href="#" class="hero__card-button">
+                  <span>Shop now</span>
+                  <img src="./assets/svg/next.svg" alt="Arrow icon" />
+                </a>
+              </div>
+            </div>
+
+            <div class="hero__card--special">
+              <p class="hero__card--special-season">Best Deal</p>
+              <h2 class="hero__card-highlight">
+                Special Products <br />
+                Deal of the Month
+              </h2>
+              <a href="#" class="hero__card-button">
+                <span>Shop Now</span>
+                <img src="./assets/svg/next.svg" alt="Arrow icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- features -->
+      <section class="features">
+        <div class="features__container">
+          <div class="benefit">
+            <div class="benefit__icon">
+              <img src="./assets/svg/truck.svg" alt="Truck icon" />
+            </div>
+            <div class="benefit__content">
+              <h3 class="benefit__title">Free Shipping</h3>
+              <p class="benefit__text">Free shipping on all your order</p>
+            </div>
           </div>
 
+          <div class="benefit">
+            <div class="benefit__icon">
+              <img src="./assets/svg/headphones.svg" alt="Support icon" />
+            </div>
+            <div class="benefit__content">
+              <h3 class="benefit__title">Customer Support 24/7</h3>
+              <p class="benefit__text">Instant access to Support</p>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit__icon">
+              <img
+                src="./assets/svg/shopping-bag.svg"
+                alt="Secure Payment icon"
+              />
+            </div>
+            <div class="benefit__content">
+              <h3 class="benefit__title">100% Secure Payment</h3>
+              <p class="benefit__text">We ensure your money is safe</p>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit__icon">
+              <img src="./assets/svg/package.svg" alt="Money-back icon" />
+            </div>
+            <div class="benefit__content">
+              <h3 class="benefit__title">Money-Back Guarantee</h3>
+              <p class="benefit__text">30 Days Money-Back Guarantee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="categories__header">
+          <h2 class="categories__title">Popular Categories</h2>
+          <a href="#" class="categories__view-all">
+            <span>View All</span>
+            <img src="./assets/svg/next.svg" alt="" />
+          </a>
         </div>
 
-        <!-- Phone Number -->
-        <div class="menu-navbar__phone">
-          <img src="./public/assets/svg/phone-call.svg" alt="" />
-          <span class="menu-navbar__phone-number">(219) 555-0114</span>
+        <div class="categories__grid">
+          <div class="category-card">
+            <img
+              src="./assets/images/fresh-fruit.png"
+              alt="Fresh Fruit"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Fresh Fruit</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/fresh-vegetables.png"
+              alt="Fresh Vegetables"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Fresh Vegetables</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/meat-fish.png"
+              alt="Meat & Fish"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Meat & Fish</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/snacks.png"
+              alt="Snacks"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Snacks</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/beverages.png"
+              alt="Beverages"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Beverages</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/beauty-health.png"
+              alt="Beauty & Health"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Beauty & Health</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/bread-bakery.png"
+              alt="Bread & Bakery"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Bread & Bakery</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/baking-needs.png"
+              alt="Baking Needs"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Baking Needs</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/cooking.png"
+              alt="Cooking"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Cooking</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/diabetic-food.png"
+              alt="Diabetic Food"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Diabetic Food</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/dish-detergents.png"
+              alt="Dish Detergents"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Dish Detergents</p>
+          </div>
+          <div class="category-card">
+            <img
+              src="./assets/images/oil.png"
+              alt="Oil"
+              class="category-card__img"
+            />
+            <p class="category-card__title">Oil</p>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="products">
+        <div class="products__header">
+          <h2 class="products__title">Popular Products</h2>
+          <a href="#" class="products__view-all">
+            <span>View All</span>
+            <img src="./assets/svg/next.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="products__grid">
+          <div class="product-card">
+            <span class="product-card__badge">Sale 50%</span>
+
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+
+            <img
+              src="./assets/images/green-apple.png"
+              alt="Green Apple"
+              class="product-card__img"
+            />
+
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Green Apple</h3>
+                <p class="product-card__price">
+                  $14.99 <span class="old">$20.99</span>
+                </p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="./assets/images/fresh-indian-malta.png"
+              alt="Fresh Indian Malta"
+              class="product-card__img"
+            />
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Fresh Indian Malta</h3>
+                <p class="product-card__price">$20.00</p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="./assets/images/chinese-cabbage.png"
+              alt="Chinese cabbage"
+              class="product-card__img"
+            />
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Chinese cabbage</h3>
+                <p class="product-card__price">$12.00</p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="./assets/images/green-lettuce.png"
+              alt="Green Lettuce"
+              class="product-card__img"
+            />
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Green Lettuce</h3>
+                <p class="product-card__price">$9.00</p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="./assets/images/eggplant.png"
+              alt="Eggplant"
+              class="product-card__img"
+            />
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Eggplant</h3>
+                <p class="product-card__price">$20.00</p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="./assets/images/big-potatoes.png"
+              alt="Big Potatoes"
+              class="product-card__img"
+            />
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Big Potatoes</h3>
+                <p class="product-card__price">$20.00</p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="./assets/images/corn.png"
+              alt="Corn"
+              class="product-card__img"
+            />
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Corn</h3>
+                <p class="product-card__price">$12.00</p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="./assets/images/fresh-cauliflower.png"
+              alt="Fresh Cauliflower"
+              class="product-card__img"
+            />
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Fresh Cauliflower</h3>
+                <p class="product-card__price">$9.00</p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <span class="product-card__badge">Sale 50%</span>
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="./assets/images/green-capsicum.png"
+              alt="Green Capsicum"
+              class="product-card__img"
+            />
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Green Capsicum</h3>
+                <p class="product-card__price">
+                  <span class="old">$20.99</span> $20.00
+                </p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__icons">
+              <span>
+                <img src="./assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="./assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="./assets/images/green-chili.png"
+              alt="Green Chili"
+              class="product-card__img"
+            />
+            <div class="product-card-box">
+              <div class="product-card__info">
+                <h3 class="product-card__name">Green Chili</h3>
+                <p class="product-card__price">$9.00</p>
+                <div class="product-card__rating">
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img src="./assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    class="star-outline"
+                    src="./assets/svg/star-outline.svg"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <button class="product-card__lock">
+                <img src="./assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="deals">
+        <div class="deals__container">
+          <div class="deal__wrapper">
+            <div class="deals__grid">
+              <div class="deal-card deal-card--1">
+                <p class="deal-card__subtitle">Best Deals</p>
+                <h3 class="deal-card__label">Sale of the Month</h3>
+
+                <div class="deal-card__timer">
+                  <div class="timer-numbers timer" id="">
+                    <p class="timer-number" id="days">00</p>
+                    <p class="timer-number">:</p>
+                    <p class="timer-number" id="hours">00</p>
+                    <p class="timer-number">:</p>
+                    <p class="timer-number" id="minutes">00</p>
+                    <p class="timer-number">:</p>
+                    <p class="timer-number" id="seconds">00</p>
+                  </div>
+                  <div class="timer-labels">
+                    <p class="timer-text">Days</p>
+                    <p class="timer-text">Hours</p>
+                    <p class="timer-text">Mins</p>
+                    <p class="timer-text">Secs</p>
+                  </div>
+                </div>
+
+                <a href="#" class="deal-card__btn">
+                  <span>Shop Now</span>
+                  <img src="./assets/svg/next.svg" alt="Arrow icon" />
+                </a>
+              </div>
+
+              <div class="deal-card deal-card--2">
+                <p class="deal-card__subtitle">Low-Fat Meat</p>
+                <h3 class="deal-card__label">85% Fat Free</h3>
+                <p class="deal-card__price">
+                  <span class="started">Started at</span>
+                  <span class="sale">$79.99</span>
+                </p>
+                <a href="#" class="deal-card__btn">
+                  <span>Shop Now</span>
+                  <img src="./assets/svg/next.svg" alt="Arrow icon" />
+                </a>
+              </div>
+
+              <div class="deal-card deal-card--3 deal-card-dark">
+                <p class="deal-card__subtitle deal-card__subtitle-dark">
+                  100% Fresh Fruit
+                </p>
+                <h3 class="deal-card__label deal-card__label-dark">
+                  Summer Sale
+                </h3>
+                <p class="deal-card__price deal-card__price-dark">
+                  Up to <strong>64% OFF</strong>
+                </p>
+                <a href="#" class="deal-card__btn">
+                  <span>Shop Now</span>
+                  <img src="./assets/svg/next.svg" alt="Arrow icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script type="module" src="/src/main.js"></script>

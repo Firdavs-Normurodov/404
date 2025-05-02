@@ -1,3 +1,10 @@
 import "./css/style.css";
-import "./css/header.css"
+import "./css/header.css";
+import "./css/hero.css";
+import "./css/features.css";
+import "./css/categories.css";
+import "./css/products.css";
+import "./css/deals.css";
 import "./js/app.js";
+import "./js/timer.js";
+import "./js/menu.js";
