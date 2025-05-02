@@ -84,6 +84,9 @@
   font-weight: 400;
   margin: 0;
 }
+.deal-card__price .started {
+  color: var(--light);
+}
 .deal-card__price-dark {
   font-size: 1rem;
   display: flex;
@@ -163,7 +166,9 @@
   text-decoration: none;
   margin-top: 1rem;
 }
-
+.deal-card__btn span {
+  color: var(--primary-green);
+}
 .deal-card--1 {
   background-image: url("../../public/assets/images/deals-1.png");
 }
