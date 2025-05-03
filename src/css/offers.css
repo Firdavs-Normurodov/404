@@ -1,16 +1,13 @@
-.offers-container {
+.offers-wrapper {
   width: 100%;
-  background: #e6e6e6;
+  background: var(--lightest-grey);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.offers-wrapper {
-  width: 85%;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 .offers-header {
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +30,7 @@
   color: var(--primary-green);
 }
 .offers-grid {
-  width: 100%;
+  width: 85%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 0;
