@@ -14,7 +14,6 @@
   gap: 1.5rem;
 }
 
-/* ==== Left Banner (Main) ==== */
 .hero__main-banner {
   flex: 4;
   height: 70vh;
@@ -153,7 +152,7 @@
 .hero__card-button span {
   color: var(--primary-green);
 }
-/* ---- Special Card ---- */
+
 .hero__card--special {
   flex: 1;
   padding: 1.5rem;
@@ -180,8 +179,10 @@
 
 /* ==== Responsive ==== */
 
-/* Planshetlar uchun (768px - 1024px) */
 @media screen and (max-width: 1024px) {
+  .hero {
+    margin-top: 4rem;
+  }
   .hero__container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -219,7 +220,7 @@
   }
 }
 
-/* Mobil qurilmalar uchun (< 768px) */
+/* Mobile (< 768px) */
 @media screen and (max-width: 767px) {
   .hero__container {
     flex-direction: column;
@@ -278,7 +279,6 @@
     min-height: 22vh;
   }
 
-  /* Slight difference for 1st card */
   .hero__card--middle .hero__card-discount {
     font-size: 2.2rem;
     color: #ff8a00;

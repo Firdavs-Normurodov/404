@@ -411,7 +411,7 @@ span {
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    margin-top: 56px; /* Below fixed header-bar */
+    margin-top: 3.5rem;
   }
 
   .navbar-wrapper.show {
@@ -610,16 +610,5 @@ span {
 
   .menu-navbar__phone-number {
     font-size: 0.9rem;
-  }
-}
-
-/* Add padding to content to prevent overlap */
-.hero {
-  padding-top: 60px; /* For desktop (menu-navbar sticky) */
-}
-
-@media (max-width: 992px) {
-  .hero {
-    padding-top: 60px; /* For responsive (only header-bar fixed) */
   }
 }
