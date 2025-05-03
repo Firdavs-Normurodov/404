@@ -129,11 +129,11 @@
     .followus .followus__items .top-item {
         flex-direction: column;
         gap: 20px;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .followus .followus__items .linee {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         gap: 20px;
     }
