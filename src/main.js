@@ -13,3 +13,4 @@ import "./css/footer.css";
 import "./css/newsletter.css";
 import "./css/offers.css";
 import "./css/followus.css"
+import "./css/latest.css"

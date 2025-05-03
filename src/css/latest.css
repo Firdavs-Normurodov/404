@@ -1,0 +1,108 @@
+.latest_news {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.latest_news .items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 32px;
+}
+
+.latest_news .items .news__row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 85%;
+}
+
+.latest_news .items .news__row .row__item{
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    max-width: 424px;
+    transition: all .6s linear;
+}
+
+.latest_news .items .news__row .row__item:hover {
+  box-shadow: 0px 20px 50px 0px #00000014;
+
+
+}
+
+
+.latest_news .items .news__row .row__item .top {
+  position: relative;
+}
+
+.latest_news .items .news__row .row__item .top span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px 19px;
+}
+
+.latest_news .items .news__row .row__item .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+}
+.latest_news .items .news__row .row__item .bottom p {
+  max-width: 376px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #2C742F;
+}
+
+.latest_news .items .news__row .row__item .bottom button {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #00b207;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 23px;
+}
+
+.latest_news .items .news__row .row__item .bottom .line1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.latest_news .items .news__row .row__item .bottom .line1 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  color: #4d4d4d;
+}
+
+
+
