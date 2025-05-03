@@ -1,0 +1,212 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  .discount {
+    padding: 60px 50px 60px 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("../../public/assets/images/Discountbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 1435px;
+    min-height: 358px;
+    gap: 12px;
+    border-radius: 20px;
+    margin-top: 60px;
+  }
+  
+  .discount h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .discount h1 {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #ffffff;
+  }
+  
+  .discount h1 span {
+    color: #ff8a00;
+  }
+  
+  .discount p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: gray;
+    max-width: 440px;
+    margin-bottom: 16px;
+  }
+  
+  .discount button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192;
+    height: 51;
+    top: 247px;
+    left: 828px;
+    border-radius: 43px;
+    gap: 16px;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    background-color: #00b207;
+    border: none;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #ffffff;
+  }
+
+.productss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.productss .line1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1045px;
+}
+
+.productss .line1 h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #1a1a1a;
+}
+
+.productss .line1 .view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.productss .line1 .view p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #20b526;
+}
+
+.productss .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productss .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #e6e6e6;
+  padding: 12px;
+  transition: all 0.6s linear;
+  position: relative;
+}
+
+.productss .items .item:hover {
+  border: 1px solid #2c742f;
+  box-shadow: 0px 0px 12px 0px #20b52652;
+}
+
+.productss .items .item:hover .btn{
+    display: flex;
+}
+
+.productss .items .item h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #4d4d4d;
+}
+
+.productss .items .item .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+}
+
+.productss .items .item .price strong {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.productss .items .item .price del{
+    color: #999999;
+}
+
+.productss .items .item .price button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.productss .items .item .price button:hover {
+  background-color: #00b207;
+}
+
+.productss .items .item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productss .items .item .btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  top: 16px;
+  right: 16px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+
+.productss .items .item .btn2{
+    top: 62px;
+    right: 16px;
+}
+
