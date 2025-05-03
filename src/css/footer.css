@@ -1,0 +1,190 @@
+footer {
+  width: 100%;
+
+  background-color: black;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 0 29px 0;
+}
+
+footer .footer__menu {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 112px; */
+}
+
+.footer__menu .menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  /* margin-right: 17px; */
+}
+
+.footer__menu .menu__item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #808080;
+  max-width: 336px;
+}
+
+.footer__menu .menu__item a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  box-shadow: 0px 1.5px 0px 0px #20b526;
+  padding-bottom: 6px;
+}
+
+.footer__menu .menu__item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer__menu .menu__item2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer__menu .menu__item2 h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.footer__menu .menu__item2 a {
+  text-decoration: none;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #999999;
+  transition: all 0.5s linear;
+}
+
+.footer__menu .menu__item2 a:hover {
+  color: #ffffff;
+}
+
+/* Mobilga moslashgan responsive footer */
+@media (max-width: 1024px) {
+  footer {
+    padding: 40px 50px;
+    gap: 40px;
+  }
+
+  .footer__menu {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 30px;
+    gap: 30px;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .footer__menu .menu__item,
+  .footer__menu .menu__item2 {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer__menu .menu__item p {
+    max-width: 100%;
+  }
+
+  .footer__menu .need {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 20px 20px;
+    gap: 20px;
+  }
+
+  .footer__menu {
+    gap: 24px;
+  }
+
+  .footer__menu .menu__item span {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer__menu .menu__item2 h4 {
+    font-size: 14px;
+  }
+
+  .footer__menu .menu__item2 a,
+  .footer__menu .menu__item a {
+    font-size: 13px;
+  }
+}
+
+.footer__copyright {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px -1px 0px 0px #333333;
+  padding-top: 29px;
+  max-width: 85%;
+}
+
+.footer__copyright p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #808080;
+}
+
+.footer__copyright .payment__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer__copyright .payment__btns button {
+  padding: 7px 9px;
+  border: 1px solid #333333;
+  background-color: transparent;
+  min-width: 45px;
+  height: 31px;
+  border-radius: 5px;
+  cursor: pointer;
+}
