@@ -8,6 +8,7 @@ import "./css/deals.css";
 import "./js/app.js";
 import "./js/timer.js";
 import "./js/menu.js";
-import "./css/feature.css"
-import "./css/footer.css"
-import "./css/newsletter.css"
+import "./css/feature.css";
+import "./css/footer.css";
+import "./css/newsletter.css";
+import "./css/offers.css";
