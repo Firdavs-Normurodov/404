@@ -4,8 +4,8 @@
 
 .feature {
   width: 100%;
-  /* padding: 60px 127px; */
   max-width: 85%;
+  padding: 3rem 0;
 }
 
 .discount {
