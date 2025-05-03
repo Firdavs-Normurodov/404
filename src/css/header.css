@@ -65,25 +65,13 @@
 
 /* === NAVBAR WRAPPER === */
 .navbar-wrapper {
-  display: none;
   width: 100%;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.navbar-wrapper.show {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Large screen: always show navbars, hide hamburger */
 @media (min-width: 993px) {
   .navbar-wrapper {
     display: block;
-    opacity: 1;
-    transform: translateY(0);
   }
 
   .header-bar {
@@ -91,6 +79,18 @@
   }
 
   .menu-toggle {
+    display: none;
+  }
+
+  .menu-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+  }
+
+  /* Hide menu-navbar if inside navbar-wrapper in desktop mode */
+  .navbar-wrapper .menu-navbar {
     display: none;
   }
 }
@@ -400,10 +400,39 @@ span {
 
 /* Tabletlar (≤ 992px) */
 @media (max-width: 992px) {
+  .header-bar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar-wrapper {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-top: 56px; /* Below fixed header-bar */
+  }
+
+  .navbar-wrapper.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   .top-navbar,
   .main-navbar,
   .menu-navbar {
-    background-color: var(--dark);
+    background-color: var(--dark-grey);
+    position: static;
+  }
+
+  .menu-navbar {
+    display: none;
+  }
+
+  .navbar-wrapper.show .menu-navbar {
+    display: flex;
   }
 
   .top-navbar__container,
@@ -412,7 +441,7 @@ span {
     max-width: 95%;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.6rem;
     padding: 0.3rem;
   }
 
@@ -581,5 +610,16 @@ span {
 
   .menu-navbar__phone-number {
     font-size: 0.9rem;
+  }
+}
+
+/* Add padding to content to prevent overlap */
+.hero {
+  padding-top: 60px; /* For desktop (menu-navbar sticky) */
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding-top: 60px; /* For responsive (only header-bar fixed) */
   }
 }

@@ -170,15 +170,15 @@
   color: var(--primary-green);
 }
 .deal-card--1 {
-  background-image: url("../../public/assets/images/deals-1.png");
+  background-image: url("/assets/images/deals-1.png");
 }
 
 .deal-card--2 {
-  background-image: url("../../public/assets/images/deals-2.png");
+  background-image: url("/assets/images/deals-2.png");
 }
 
 .deal-card--3 {
-  background-image: url("../../public/assets/images/deals-3.png");
+  background-image: url("/assets/images/deals-3.png");
 }
 
 /* Responsive */
