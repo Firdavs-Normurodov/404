@@ -6,6 +6,15 @@
   padding: 60px 0;
 }
 
+.followus h2{
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #1a1a1a;
+}
+
 .followus .followus__items {
   /* max-width: 85%; */
   width: 100%;
