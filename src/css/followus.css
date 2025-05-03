@@ -111,6 +111,46 @@
     display: block;
 }
 
+
+@media (max-width: 1024px) {
+    .followus .followus__items .linee {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .followus .followus__items .linee .block {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .followus .followus__items .top-item {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .followus .followus__items .linee {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .followus .followus__items .linee .block {
+        width: 90%;
+        max-width: 300px;
+        height: 200px;
+    }
+
+    .followus .followus__items .top-item img {
+        padding-left: 0;
+        border-left: none;
+    }
+}
+
+
 /* 
 .followus .followus__items .linee .block{
     display: flex;
