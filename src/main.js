@@ -12,3 +12,4 @@ import "./css/feature.css";
 import "./css/footer.css";
 import "./css/newsletter.css";
 import "./css/offers.css";
+import "./css/followus.css"
