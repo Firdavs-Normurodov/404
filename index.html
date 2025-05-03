@@ -758,13 +758,13 @@
 
                 <div class="deal-card__timer">
                   <div class="timer-numbers timer">
-                    <p class="timer-number">02</p>
+                    <p class="timer-number" id="days">00</p>
                     <p class="timer-number">:</p>
-                    <p class="timer-number">04</p>
+                    <p class="timer-number" id="hours">00</p>
                     <p class="timer-number">:</p>
-                    <p class="timer-number">15</p>
+                    <p class="timer-number" id="minutes">00</p>
                     <p class="timer-number">:</p>
-                    <p class="timer-number">56</p>
+                    <p class="timer-number" id="seconds">00</p>
                   </div>
                   <div class="timer-labels">
                     <p class="timer-text">Days</p>
@@ -814,7 +814,7 @@
       </section>
       <div class="offers-wrapper">
         <div class="offers-header">
-          <h2 class="offers-title">Hot Offers</h2>
+          <h2 class="offers-title">Hot Deals</h2>
           <a href="#" class="offers-view-all">
             <span>View All</span>
             <img src="/assets/svg/next.svg" alt="" />
@@ -889,14 +889,14 @@
                 </div>
                 <p class="offer-end-highlight">Hurry up! Offer ends In:</p>
                 <div class="highlight-card__timer">
-                  <div class="timer-highlight timer" id="timer">
-                    <p class="timer-highlight" id="days">00</p>
+                  <div class="timer-highlight timer">
+                    <p class="timer-highlight">01</p>
                     <p class="timer-highlight">:</p>
-                    <p class="timer-highlight" id="hours">00</p>
+                    <p class="timer-highlight">23</p>
                     <p class="timer-highlight">:</p>
-                    <p class="timer-highlight" id="minutes">00</p>
+                    <p class="timer-highlight">34</p>
                     <p class="timer-highlight">:</p>
-                    <p class="timer-highlight" id="seconds">00</p>
+                    <p class="timer-highlight">57</p>
                   </div>
                   <div class="timer-highlight-labels">
                     <p class="timer-highlight-text">Days</p>
@@ -919,7 +919,42 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="/assets/images/chinese-cabbage.png"
+              alt="Green Lettuce"
+              class="offer-card__img"
+            />
+            <div class="offer-card-box">
+              <div class="offer-card__info">
+                <h3 class="offer-card__name">Chinese cabbage</h3>
+                <p class="offer-card__price">$12.00</p>
+                <div class="offer-card__rating">
+                  <img src="/assets/svg/gold-star.svg" alt="Star" />
+                  <img src="/assets/svg/gold-star.svg" alt="Star" />
+                  <img src="/assets/svg/gold-star.svg" alt="Star" />
+                  <img src="/assets/svg/gold-star.svg" alt="Star" />
+                  <img
+                    src="/assets/svg/star-outline.svg"
+                    alt="Star"
+                    class="star-outline"
+                  />
+                </div>
+              </div>
+              <button class="offer-card__lock">
+                <img src="/assets/svg/bag.svg" alt="Add to bag" />
+              </button>
+            </div>
+          </div>
+          <div class="offer-card">
+            <div class="offer-card__icons">
+              <span>
+                <img src="/assets/svg/eyes.svg" alt="View" />
+              </span>
+              <span>
+                <img src="/assets/svg/heart.svg" alt="Favorite" />
+              </span>
+            </div>
+            <img
+              src="/assets/images/green-lettuce.png"
               alt="Green Lettuce"
               class="offer-card__img"
             />
@@ -954,7 +989,7 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="./assets/images/eggplant.png"
               alt="Eggplant"
               class="offer-card__img"
             />
@@ -989,7 +1024,7 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="./assets/images/fresh-cauliflower.png"
               alt="Fresh Cauliflower"
               class="offer-card__img"
             />
@@ -1024,7 +1059,7 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="/assets/images/green-capsicum.png"
               alt="Green Capsicum"
               class="offer-card__img"
             />
@@ -1059,7 +1094,7 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="/assets/images/green-chili.png"
               alt="Green Chili"
               class="offer-card__img"
             />
@@ -1095,7 +1130,7 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="/assets/images/big-potatoes.png"
               alt="Big Potatoes"
               class="offer-card__img"
             />
@@ -1130,7 +1165,7 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="/assets/images/corn.png"
               alt="Corn"
               class="offer-card__img"
             />
@@ -1165,7 +1200,7 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="/assets/images/red-chili.png"
               alt="Red Chili"
               class="offer-card__img"
             />
@@ -1200,7 +1235,7 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="/assets/images/red-tomatos.png"
               alt="Red Tomatos"
               class="offer-card__img"
             />
@@ -1235,7 +1270,7 @@
               </span>
             </div>
             <img
-              src="/assets/images/green-apple.png"
+              src="/assets/images/surjapur-mango.png"
               alt="Surjapur Mango"
               class="offer-card__img"
             />
@@ -1488,52 +1523,52 @@
       </section>
 
       <section class="followus">
-          <div class="followus__items">
-            <div class="top-item">
-              <img src="./public/assets/svg/steps.svg" alt="svg" class="first">
-              <img src="./public/assets/svg/mango.svg" alt="svg">
-              
-              <img src="./public/assets/svg/foodnetwork.svg" alt="svg">
-              <img src="./public/assets/svg/food.svg" alt="svg">
-              <img src="./public/assets/svg/bookoff.svg" alt="svg">
-              <img src="./public/assets/svg/gseries.svg" alt="svg">
-            </div>
-            <div class="bottom-item">
-              <h2>Follow us on Instagram</h2>
-              <div class="linee">
-                <a href="https://www.instagram.com/ecobozor.uz/">
+        <div class="followus__items">
+          <div class="top-item">
+            <img src="./public/assets/svg/steps.svg" alt="svg" class="first" />
+            <img src="./public/assets/svg/mango.svg" alt="svg" />
+
+            <img src="./public/assets/svg/foodnetwork.svg" alt="svg" />
+            <img src="./public/assets/svg/food.svg" alt="svg" />
+            <img src="./public/assets/svg/bookoff.svg" alt="svg" />
+            <img src="./public/assets/svg/gseries.svg" alt="svg" />
+          </div>
+          <div class="bottom-item">
+            <h2>Follow us on Instagram</h2>
+            <div class="linee">
+              <a href="https://www.instagram.com/ecobozor.uz/">
                 <div class="block">
-                  <img src="./public/assets/svg/instawhite.svg" alt="icon">
+                  <img src="./public/assets/svg/instawhite.svg" alt="icon" />
                 </div>
-                </a>
-                <a href="https://www.instagram.com/ecobozor.uz/">
+              </a>
+              <a href="https://www.instagram.com/ecobozor.uz/">
                 <div class="block" id="block2">
-                  <img src="./public/assets/svg/instawhite.svg" alt="icon">
+                  <img src="./public/assets/svg/instawhite.svg" alt="icon" />
                 </div>
               </a>
               <a href="https://www.instagram.com/ecobozor.uz/">
                 <div class="block" id="block3">
-                  <img src="./public/assets/svg/instawhite.svg" alt="icon">
+                  <img src="./public/assets/svg/instawhite.svg" alt="icon" />
                 </div>
-                </a>
-                <a href="https://www.instagram.com/ecobozor.uz/">
+              </a>
+              <a href="https://www.instagram.com/ecobozor.uz/">
                 <div class="block" id="block4">
-                  <img src="./public/assets/svg/instawhite.svg" alt="icon">
+                  <img src="./public/assets/svg/instawhite.svg" alt="icon" />
                 </div>
-                </a>
-                <a href="https://www.instagram.com/ecobozor.uz/">
+              </a>
+              <a href="https://www.instagram.com/ecobozor.uz/">
                 <div class="block" id="block5">
-                  <img src="./public/assets/svg/instawhite.svg" alt="icon">
+                  <img src="./public/assets/svg/instawhite.svg" alt="icon" />
                 </div>
-                </a>
-                <a href="https://www.instagram.com/ecobozor.uz/">
+              </a>
+              <a href="https://www.instagram.com/ecobozor.uz/">
                 <div class="block" id="block6">
-                  <img src="./public/assets/svg/instawhite.svg" alt="icon">
+                  <img src="./public/assets/svg/instawhite.svg" alt="icon" />
                 </div>
-                </a>
-              </div>
+              </a>
             </div>
           </div>
+        </div>
       </section>
       <section class="newsletter">
         <div class="newsletter__items">
@@ -1545,29 +1580,29 @@
             </p>
           </div>
           <div class="input">
-            <input type="text" placeholder="Your email address">
+            <input type="text" placeholder="Your email address" />
             <button>Subscribe</button>
           </div>
 
           <div class="icons">
             <a href="https://www.facebook.com/ecobozoruz/">
               <button>
-                <img src="./public/assets/svg/fb.svg" alt="facebook">
+                <img src="./public/assets/svg/fb.svg" alt="facebook" />
               </button>
             </a>
             <a href="https://x.com/shopery_es/status/1141990015720927232">
               <button>
-                <img src="./public/assets/svg/twitter.svg" alt="twitter">
+                <img src="./public/assets/svg/twitter.svg" alt="twitter" />
               </button>
             </a>
             <a href="https://www.pinterest.com/javohirartikov/eco-bozor/">
               <button>
-                <img src="./public/assets/svg/pinterest.svg" alt="pinterest">
+                <img src="./public/assets/svg/pinterest.svg" alt="pinterest" />
               </button>
             </a>
             <a href="https://www.instagram.com/ecobozoruz/?hl=en">
               <button>
-                <img src="./public/assets/svg/instagram.svg" alt="insta">
+                <img src="./public/assets/svg/instagram.svg" alt="insta" />
               </button>
             </a>
           </div>
