@@ -48,7 +48,7 @@ Agar siz loyihani o‘zingizning kompyuteringizda ishga tushurmoqchi bo‘lsangi
 ### 1. Git orqali loyihani yuklab oling
 
 ```bash
-git https://github.com/Firdavs-Normurodov/ecobazar
+git clone https://github.com/Firdavs-Normurodov/ecobazar
 cd ecobazar
 npm install
 npm run dev
