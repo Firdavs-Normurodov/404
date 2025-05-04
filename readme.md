@@ -1,6 +1,5 @@
 # 🌿 Ecobazar — Responsive Online Shop
 
-![Live Demo](https://shopery.vercel.app)  
 🔗 **Live Website:** [https://shopery.vercel.app](https://shopery.vercel.app)
 
 ---
